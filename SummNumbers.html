@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        let AB = prompt("Введите два целых числа A и B (A<B)");
+        AB = AB.split(' ');
+        for (let i=0;i<AB.length;i++) {AB[i] = Number(AB[i])}
+        let rangeNumbers = [];
+        for (let i=AB[0];i<=AB[1];i++) {
+            Number(rangeNumbers.push(i))
+            console.log(i)
+        };
+        console.log(rangeNumbers)
+        alert(rangeNumbers)
+        let summNumbers = 0;
+        for (let i=0;i<rangeNumbers.length;i++) {summNumbers += Number(rangeNumbers[i])};
+        alert(summNumbers+' - сумма чисел между A и B')
+    </script>
+</body>
+</html>
